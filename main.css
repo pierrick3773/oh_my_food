@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+}
+
+.localisation {
+  display: flex;
+  flex-direction: row;
+}
+.localisation i {
+  justify-items: center;
+}
+
+.main_slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fonction {
+  display: flex;
+  flex-direction: column;
+}
+.fonction button {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: green;
+}/*# sourceMappingURL=main.css.map */

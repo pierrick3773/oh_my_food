@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+}
+.localisation {
+  display: flex;
+  flex-direction: row;
+  i {
+    justify-items: center;
+  }
+}
+.main_slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fonction {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    display: flex;
+    flex-direction: row;
+  }
+}

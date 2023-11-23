@@ -1,15 +1,23 @@
+body {
+  margin: 0 0 0 0px;
+}
+
 header {
   display: flex;
   justify-content: center;
-  background-color: green;
 }
 
 .localisation {
   display: flex;
   flex-direction: row;
+  background-color: rgb(226, 214, 214);
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
 }
 .localisation i {
-  justify-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .main_slogan {
@@ -27,6 +35,10 @@ header {
   flex-direction: row;
 }
 
-body {
-  background-color: green;
+.main_slogan {
+  display: flex;
+  flex-direction: column;
+}
+.main_slogan h2 {
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

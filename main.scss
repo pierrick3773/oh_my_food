@@ -1,2 +1,48 @@
 @import "./sass/base/normalize.scss";
-@import "./sass/components/test.scss";
+body {
+  margin: 0 0 0 0px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.localisation {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(226, 214, 214);
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+
+  i {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main_slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fonction {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.main_slogan {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    justify-content: center;
+  }
+}

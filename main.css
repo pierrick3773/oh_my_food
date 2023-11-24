@@ -1,28 +1,9 @@
 body {
-  margin: 0 0 0 0px;
+  margin: 0;
 }
 
 header {
   display: flex;
-  justify-content: center;
-}
-
-.localisation {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(226, 214, 214);
-  width: 100%;
-  justify-content: center;
-  gap: 8px;
-}
-.localisation i {
-  display: flex;
-  align-items: center;
-}
-
-.main_slogan {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -35,10 +16,37 @@ header {
   flex-direction: row;
 }
 
-.main_slogan h2 {
+.main_slogan {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
+  align-items: center;
+}
+.main_slogan h2 {
+  text-align: center;
+}
+.main_slogan h3 {
+  text-align: center;
+  margin-top: 0px;
 }
 .main_slogan button {
-  background-color: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 40px;
+  width: 65%;
+  height: 60px;
+  color: white;
+}
+.main_slogan .localisation {
+  display: flex;
+  flex-direction: row;
+  background-color: #EAEAEA;
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+  padding: inherit;
+}
+.main_slogan .localisation i {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

@@ -31,9 +31,10 @@
   button{
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 40px;
-    width: 65%;
-    height: 60px;
+    height: 50px;
     color: white;
+    border-color: white;
+    width: 80%;
   }
 }
 
@@ -44,5 +45,13 @@
     button {
       display: flex;
       flex-direction: row;
+      align-items: center;
+    }
+    .number {
+      background-color: #9356DC;
+      border-radius: 50px;
+      width: 15px;
+      color: white;
+      padding: 3px;
     }
 }

@@ -1,0 +1,48 @@
+.main_slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  align-items: center;
+
+  .localisation {
+    display: flex;
+    flex-direction: row;
+    background-color:#EAEAEA;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    padding: inherit;
+
+      i {
+        display: flex;
+        align-items: center;
+      }
+  } 
+  h2 {
+  text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  button{
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 40px;
+    width: 65%;
+    height: 60px;
+    color: white;
+  }
+}
+
+.fonction {
+  display: flex;
+  flex-direction: column;
+
+    button {
+      display: flex;
+      flex-direction: row;
+    }
+}

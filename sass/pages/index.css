@@ -1,12 +1,3 @@
-body {
-  margin: 0;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
-
 .main_slogan {
   display: flex;
   flex-direction: column;
@@ -49,4 +40,4 @@ header {
 .fonction button {
   display: flex;
   flex-direction: row;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=index.css.map */

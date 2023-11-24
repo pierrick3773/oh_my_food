@@ -39,10 +39,15 @@ header {
 }
 
 .main_slogan {
-  display: flex;
-  flex-direction: column;
+  
 
   h2 {
+    display: flex;
     justify-content: center;
   }
+
+  button{
+    background-color: linear-gradient(#9356DC, #FF79DA);
+  }
 }
+

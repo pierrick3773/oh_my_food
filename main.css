@@ -35,10 +35,10 @@ header {
   flex-direction: row;
 }
 
-.main_slogan {
-  display: flex;
-  flex-direction: column;
-}
 .main_slogan h2 {
+  display: flex;
   justify-content: center;
+}
+.main_slogan button {
+  background-color: linear-gradient(#9356DC, #FF79DA);
 }/*# sourceMappingURL=main.css.map */

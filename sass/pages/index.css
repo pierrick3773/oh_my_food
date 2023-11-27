@@ -18,32 +18,61 @@
   display: flex;
   align-items: center;
 }
-.main_slogan h2 {
+.main_slogan .slogan-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  align-items: center;
+  background-color: #f7f6f6;
+  width: 100%;
+  padding-bottom: 60px;
+}
+.main_slogan .slogan-button h2 {
   text-align: center;
 }
-.main_slogan h3 {
+.main_slogan .slogan-button h3 {
   text-align: center;
   margin-top: 0px;
+  font-weight: normal;
 }
-.main_slogan button {
+.main_slogan .slogan-button button {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 40px;
-  height: 50px;
+  height: 55px;
   color: white;
-  border-color: white;
-  width: 80%;
+  border-color: #f7f6f6;
+  width: 65%;
 }
 
 .fonction {
   display: flex;
   flex-direction: column;
 }
-.fonction button {
+.fonction .titre-fonc {
+  font-weight: bold;
+  font-size: x-large;
+  padding-left: 15px;
+}
+.fonction .button-fonc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  align-items: center;
+}
+.fonction .button-fonc button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 90%;
+  gap: 17px;
+  border-radius: 20px;
+  height: 70px;
+  border-color: white;
+  background: #f7f6f6;
 }
-.fonction .number {
+.fonction .button-fonc .number {
   background-color: #9356DC;
   border-radius: 50px;
   width: 15px;

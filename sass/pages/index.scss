@@ -18,6 +18,13 @@
         display: flex;
         align-items: center;
       }
+      input {
+        text-align: center;
+        background:#EAEAEA;
+        border:none;
+        width: 30%;
+        height: 50px;
+      }
   } 
   .slogan-button {
     display: flex;
@@ -52,6 +59,7 @@
 .fonction {
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
     .titre-fonc {
       font-weight: bold;
       font-size: x-large;
@@ -72,7 +80,7 @@
         border-radius: 20px;
         height: 70px;
         border-color: white;
-        background: #f7f6f6;
+        background: #f6f6f6;
       }
       .number {
         background-color: #9356DC;
@@ -80,6 +88,7 @@
         width: 15px;
         color: white;
         padding: 3px;
+        margin-left: -15px;
       }
   }
 }

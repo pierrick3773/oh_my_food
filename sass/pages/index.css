@@ -18,6 +18,13 @@
   display: flex;
   align-items: center;
 }
+.main_slogan .localisation input {
+  text-align: center;
+  background: #EAEAEA;
+  border: none;
+  width: 30%;
+  height: 50px;
+}
 .main_slogan .slogan-button {
   display: flex;
   flex-direction: column;
@@ -48,6 +55,7 @@
 .fonction {
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 .fonction .titre-fonc {
   font-weight: bold;
@@ -70,7 +78,7 @@
   border-radius: 20px;
   height: 70px;
   border-color: white;
-  background: #f7f6f6;
+  background: #f6f6f6;
 }
 .fonction .button-fonc .number {
   background-color: #9356DC;
@@ -78,4 +86,5 @@
   width: 15px;
   color: white;
   padding: 3px;
+  margin-left: -15px;
 }/*# sourceMappingURL=index.css.map */

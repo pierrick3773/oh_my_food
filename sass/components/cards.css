@@ -17,6 +17,9 @@
 .card-rest img {
   width: 100%;
   border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 231px;
 }
 .card-rest a {
   background-color: white;

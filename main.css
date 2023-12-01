@@ -121,6 +121,9 @@ header {
 .card-rest img {
   width: 100%;
   border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 231px;
 }
 .card-rest a {
   background-color: white;
@@ -140,4 +143,28 @@ header {
 }
 .card-rest .card-txt .card-subtitle {
   margin-top: 4px;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 30px;
+}
+footer img {
+  filter: invert(100%);
+  width: 35%;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+footer .foot-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+footer p {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */

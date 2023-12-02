@@ -12,9 +12,10 @@
   background-color: #EAEAEA;
   align-items: center;
   gap: 15px;
+  padding-bottom: 30px;
     img {
       width: 100%;
-      border-radius: 20px;
+      border-radius: 20px 20px 0px 0px;
       object-fit: cover;
       height: 231px;
     }

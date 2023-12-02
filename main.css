@@ -35,7 +35,7 @@ header {
   text-align: center;
   background: #EAEAEA;
   border: none;
-  width: 30%;
+  width: 35%;
   height: 50px;
 }
 .main_slogan .slogan-button {
@@ -56,7 +56,7 @@ header {
   margin-top: 0px;
   font-weight: normal;
 }
-.main_slogan .slogan-button button {
+.main_slogan .slogan-button .button-round-purple {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 40px;
   height: 55px;
@@ -117,10 +117,11 @@ header {
   background-color: #EAEAEA;
   align-items: center;
   gap: 15px;
+  padding-bottom: 30px;
 }
 .card-rest img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
   height: 231px;
@@ -151,6 +152,7 @@ footer {
   flex-direction: column;
   color: white;
   padding-left: 30px;
+  padding-bottom: 30px;
 }
 footer img {
   filter: invert(100%);
@@ -167,4 +169,8 @@ footer .foot-logo {
 footer p {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

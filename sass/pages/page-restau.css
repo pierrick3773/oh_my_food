@@ -1,3 +1,8 @@
 img {
   width: 100%;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=page-restau.css.map */

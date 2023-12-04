@@ -173,4 +173,9 @@ footer p {
 
 img {
   width: 100%;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

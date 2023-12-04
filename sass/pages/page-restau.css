@@ -5,4 +5,14 @@ img {
 .categories {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  background-color: #f7f6f6;
+}
+.categories .button-plat {
+  background-color: white;
+}
+.categories .button-plat .bas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }/*# sourceMappingURL=page-restau.css.map */

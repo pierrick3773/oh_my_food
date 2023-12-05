@@ -1,20 +1,80 @@
 img {
   width: 100%;
 }
-
-.categories{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.main-menu{
   background-color: #f7f6f6;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 60px;
+  z-index: 1;
+  margin-top: -20px;
+  position: relative;
 
-    .button-plat {
-      background-color: white;
-
-      .bas {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+  h2 {
+    margin-top: 0px;
+    padding-top: 30px;
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
       }
-    }
-}
+  .categories{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+      .button-plat {
+        background-color: white;
+        border-radius: 20px;
+
+        .button-plat-title {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 10px;
+          overflow: hidden;
+          color: #000;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          font-weight: bold;
+        }
+
+        }
+
+        .bas {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-bottom: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          .button-plat-subtitle {
+            overflow: hidden;
+            color: #000;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 15.043px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+          }
+
+          .button-plat-price {
+            color: #353535;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 15.043px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-weight: bold;
+          }
+        }
+      }
+  }

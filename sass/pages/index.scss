@@ -74,24 +74,24 @@
       width: 100%;
       gap: 15px;
       align-items: center;
-      button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 90%;
-        gap: 17px;
-        border-radius: 20px;
-        height: 70px;
-        border-color: white;
-        background: #f6f6f6;
+        button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 90%;
+          gap: 17px;
+          border-radius: 20px;
+          height: 70px;
+          border-color: white;
+          background: #f6f6f6;
       }
-      .number {
-        background-color: #9356DC;
-        border-radius: 50%;
-        width: 15px;
-        color: white;
-        padding: 3px;
-        margin-left: -15px;
-      }
+        .number {
+          background-color: #9356DC;
+          border-radius: 50%;
+          width: 15px;
+          color: white;
+          padding: 3px;
+          margin-left: -15px;
+        }
   }
 }

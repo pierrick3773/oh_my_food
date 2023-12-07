@@ -95,7 +95,7 @@ header {
 }
 .fonction .button-fonc .number {
   background-color: #9356DC;
-  border-radius: 50px;
+  border-radius: 50%;
   width: 15px;
   color: white;
   padding: 3px;
@@ -171,17 +171,25 @@ footer p {
   margin-bottom: 5px;
 }
 
+.image {
+  height: 270px;
+}
+
 img {
   width: 100%;
+  height: 115%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-menu {
   background-color: #f7f6f6;
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 60px;
+  border-radius: 40px;
   z-index: 1;
   margin-top: -20px;
+  position: relative;
 }
 .main-menu h2 {
   margin-top: 0px;

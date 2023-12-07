@@ -10,11 +10,10 @@ img {
 }
 
 .main-menu {
-  background-color: #f7f6f6;
+  background-color: #F6F6F6;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 40px;
-  z-index: 1;
   margin-top: -20px;
   position: relative;
 }
@@ -32,6 +31,11 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.main-menu .categories .categorie-plats p {
+  border-bottom: 4px solid;
+  width: 12%;
+  padding-bottom: 3px;
 }
 .main-menu .categories .button-plat {
   background-color: white;

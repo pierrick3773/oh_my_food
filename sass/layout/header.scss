@@ -5,13 +5,15 @@ header {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-items: center;
-
     a {
       margin-left: 20px;
+      grid-area: 1 / 1 / 2 / 2; 
+
     }
 
     h1 {
       margin-bottom: 0px;
       margin-top: 10px;
+      grid-area: 1 / 2 / 2 / 3;
     }
 }

@@ -12,10 +12,12 @@ header {
 }
 header a {
   margin-left: 20px;
+  grid-area: 1/1/2/2;
 }
 header h1 {
   margin-bottom: 0px;
   margin-top: 10px;
+  grid-area: 1/2/2/3;
 }
 
 * {

@@ -3,9 +3,19 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   align-items: center;
+}
+header a {
+  margin-left: 20px;
+}
+header h1 {
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 * {

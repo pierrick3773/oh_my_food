@@ -15,13 +15,17 @@ img {
   border-radius: 40px 40px 0px 0px;
   margin-top: -20px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
- 
+    .titre-coeur {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
 
-  .button-round-purple {
-    @include button-purple;
-  }
-  h2 {
+    h2 {
     margin-top: 0px;
     padding-top: 30px;
     color: var(--Black, #101010);
@@ -30,7 +34,22 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    grid-area: 1 / 1 / 2 / 2; 
       }
+
+    .coeur, .coeur-linear, input {
+      grid-area: 1 / 2 / 2 / 3;
+
+    }
+    }
+
+  .button-round-purple {
+    @include button-purple;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 65%;
+  }
+  
   .categories{
     display: flex;
     flex-direction: column;

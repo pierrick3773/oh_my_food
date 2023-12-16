@@ -1,0 +1,40 @@
+.coeur {
+  grid-area: 2 / 2 / 3 / 3;
+  font-size: x-large;
+  z-index: 2;
+  opacity: 1;
+  height: 25px;
+  width: 25px;
+  }
+
+  input {
+    grid-area: 2 / 2 / 3 / 3;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+    height: 25px;
+    width: 25px;
+
+      &:checked ~.coeur-linear {
+        opacity: 1;
+        transition: 400ms;
+      }
+
+      &:checked ~.coeur {
+        opacity: 0;
+        transition: 400ms;
+      }
+  }
+
+.coeur-linear {
+  
+  grid-area: 2 / 2 / 3 / 3;
+  font-size: x-large;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#9356DC,#FF79DA);
+  opacity: 0;
+  z-index: 2;
+  height: 25px;
+  width: 25px;
+}

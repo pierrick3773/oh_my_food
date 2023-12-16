@@ -52,6 +52,8 @@
 
    .button-round-purple{
       @include button-purple;
+      display: inline-flex;
+      align-items: center;
     }
   }
 }

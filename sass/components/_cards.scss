@@ -40,7 +40,7 @@
       border-radius: 20px 20px 0px 0px;
       object-fit: cover;
       height: 231px;
-      grid-area: 1 / 1 / 2 / 2;
+      grid-area: 1 / 1 / 2 / 2; 
     }
 
     .card-txt {
@@ -57,38 +57,8 @@
           margin-top: 4px;
           margin-bottom: 4px;
         }
+        
     }
-    .coeur {
-      grid-area: 2 / 2 / 3 / 3;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-      flex-direction: row;
-      justify-content: center;
-      font-size: x-large;
-      :active {
-        .coeur-linear {
-          opacity: 1;
-        }
-      }
     
-    .coeur-linear {
-      
-      grid-area: 2 / 2 / 3 / 3;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-      font-weight: 900;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-background-clip: text;
-      -moz-text-fill-color: transparent;
-      background-image: linear-gradient(#9356DC,#FF79DA);
-      background-size: 100%;
-      opacity: 0;
-      transition: opacity 250ms;
-      
-    }
-  }
   }
 }

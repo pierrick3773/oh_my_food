@@ -179,7 +179,6 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  z-index: 1;
 }
 .card-rest .card .coeur :active .coeur-linear {
   opacity: 1;
@@ -198,7 +197,6 @@ header h1 {
   background-size: 100%;
   opacity: 0;
   transition: opacity 250ms;
-  z-index: -1;
 }
 
 footer {

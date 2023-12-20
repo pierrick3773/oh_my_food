@@ -281,50 +281,46 @@ img {
   padding-bottom: 3px;
 }
 .main-menu .categories .button-plat {
+  display: flex;
+  height: 65px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
 }
 .main-menu .categories .button-plat .button-plat-title {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  overflow: hidden;
-  color: #000;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-weight: bold;
-}
-.main-menu .categories .bas {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.main-menu .categories .bas .button-plat-subtitle {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  color: #000;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 15.043px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
-.main-menu .categories .bas .button-plat-price {
-  color: #353535;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 15.043px;
+.main-menu .categories .button-plat .button-plat-title em {
+  font-size: 17px;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   font-weight: bold;
+  margin: 10px 0 0 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+.main-menu .categories .button-plat .button-plat-title p {
+  margin: 5px 0 10px 8px;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+.main-menu .categories .button-plat-price {
+  display: flex;
+  align-items: flex-end;
+  font-size: 15px;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-bottom: 15px;
 }
 
 .coeur {
@@ -372,6 +368,7 @@ input:checked ~ .coeur {
 
 .button-plat {
   overflow: hidden;
+  cursor: pointer;
 }
 .button-plat:hover .valid {
   margin-right: 0px;

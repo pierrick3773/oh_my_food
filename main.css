@@ -154,6 +154,14 @@ header h1 {
 }
 .card-rest .card .nouveau {
   grid-area: 1/2/2/3;
+  background-color: #99e2d0;
+  color: #0f9070;
+  height: 15px;
+  text-align: center;
+  padding: 7px;
+  margin: 13px auto;
+  border-radius: 3px;
+  font-size: 14px;
 }
 .card-rest .card img {
   width: 125%;
@@ -360,4 +368,28 @@ input:checked ~ .coeur {
   width: 25px;
   margin-top: 15px;
   margin: auto;
+}
+
+.button-plat {
+  overflow: hidden;
+}
+.button-plat:hover .valid {
+  margin-right: 0px;
+  transition-duration: 0.5s;
+}
+.button-plat .valid {
+  border-radius: 0 20px 20px 0px;
+  height: 65px;
+  width: 20%;
+  background: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -75px;
+}
+.button-plat .valid .fa-check {
+  color: #99e2d0;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
 }/*# sourceMappingURL=main.css.map */

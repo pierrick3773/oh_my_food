@@ -109,6 +109,9 @@ header h1 {
   border-color: white;
   background: #f6f6f6;
 }
+.fonction .button-fonc button .fa-store {
+  color: #9356DC;
+}
 .fonction .button-fonc .number {
   background-color: #9356DC;
   border-radius: 50%;
@@ -264,23 +267,23 @@ img {
   margin-bottom: 20px;
   width: 65%;
 }
-.main-menu .categories {
+.main-menu .categories-plats, .main-menu .categories-entree, .main-menu .categories-dessert {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.main-menu .categories .categorie-plats {
+.main-menu .categories-plats .categorie-plats, .main-menu .categories-entree .categorie-plats, .main-menu .categories-dessert .categorie-plats {
   border-bottom: solid 4px #99E2D0;
   width: 40px;
   padding-bottom: 3px;
   text-transform: uppercase;
 }
-.main-menu .categories .categorie-plats p {
+.main-menu .categories-plats .categorie-plats p, .main-menu .categories-entree .categorie-plats p, .main-menu .categories-dessert .categorie-plats p {
   border-bottom: 4px solid;
   width: 12%;
   padding-bottom: 3px;
 }
-.main-menu .categories .button-plat {
+.main-menu .categories-plats .button-plat, .main-menu .categories-entree .button-plat, .main-menu .categories-dessert .button-plat {
   display: flex;
   height: 65px;
   background-color: white;
@@ -290,14 +293,14 @@ img {
   cursor: pointer;
   width: 100%;
 }
-.main-menu .categories .button-plat .button-plat-title {
+.main-menu .categories-plats .button-plat .button-plat-title, .main-menu .categories-entree .button-plat .button-plat-title, .main-menu .categories-dessert .button-plat .button-plat-title {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.main-menu .categories .button-plat .button-plat-title em {
+.main-menu .categories-plats .button-plat .button-plat-title em, .main-menu .categories-entree .button-plat .button-plat-title em, .main-menu .categories-dessert .button-plat .button-plat-title em {
   font-size: 17px;
   font-style: normal;
   font-weight: bold;
@@ -306,14 +309,14 @@ img {
   overflow: hidden;
   max-width: 100%;
 }
-.main-menu .categories .button-plat .button-plat-title p {
+.main-menu .categories-plats .button-plat .button-plat-title p, .main-menu .categories-entree .button-plat .button-plat-title p, .main-menu .categories-dessert .button-plat .button-plat-title p {
   margin: 5px 0 10px 8px;
   font-size: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 100%;
 }
-.main-menu .categories .button-plat-price {
+.main-menu .categories-plats .button-plat-price, .main-menu .categories-entree .button-plat-price, .main-menu .categories-dessert .button-plat-price {
   display: flex;
   align-items: flex-end;
   font-size: 15px;
@@ -366,27 +369,42 @@ input:checked ~ .coeur {
   margin: auto;
 }
 
-.button-plat {
+.categories-plats .button-plat, .categories-entree .button-plat, .categories-dessert .button-plat {
   overflow: hidden;
   cursor: pointer;
 }
-.button-plat:hover .valid {
+.categories-plats .button-plat:hover .valid, .categories-entree .button-plat:hover .valid, .categories-dessert .button-plat:hover .valid {
   margin-right: 0px;
   transition-duration: 0.5s;
 }
-.button-plat .valid {
+.categories-plats .button-plat .valid, .categories-entree .button-plat .valid, .categories-dessert .button-plat .valid {
   border-radius: 0 20px 20px 0px;
   height: 65px;
-  width: 30%;
+  width: 85px;
   background: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: -85px;
 }
-.button-plat .valid .fa-check {
+.categories-plats .button-plat .valid .fa-check, .categories-entree .button-plat .valid .fa-check, .categories-dessert .button-plat .valid .fa-check {
   color: #99e2d0;
   background: white;
   border-radius: 50%;
   padding: 4px;
+}
+
+.categories-entree {
+  animation: casquade-entree 1s;
+}
+
+@keyframes casquade-entree {
+  0% {
+    opacity: 0;
+    transform: translate(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }/*# sourceMappingURL=main.css.map */

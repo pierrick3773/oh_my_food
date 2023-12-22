@@ -1,28 +1,30 @@
-.button-plat {
-  &:hover .valid{
-      margin-right: 0px;
-      transition-duration: 0.5s;
-    }
-    overflow: hidden;
-    cursor: pointer;
-  .valid {
-    border-radius: 0 20px 20px 0px;
-    height: 65px;
-    width: 30%;
-    background: #99e2d0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: -85px;
+.categories-plats, .categories-entree, .categories-dessert{
 
-    .fa-check{
-      color: #99e2d0;
-      background: white;
-      border-radius: 50%;
-      padding: 4px;
-    }
+  .button-plat {
+    &:hover .valid{
+        margin-right: 0px;
+        transition-duration: 0.5s;
+      }
+      overflow: hidden;
+      cursor: pointer;
+    .valid {
+      border-radius: 0 20px 20px 0px;
+      height: 65px;
+      width: 85px;
+      background: #99e2d0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: -85px;
 
-    
+      .fa-check{
+        color: #99e2d0;
+        background: white;
+        border-radius: 50%;
+        padding: 4px;
+      }
+
+      
+    }
   }
-
 }

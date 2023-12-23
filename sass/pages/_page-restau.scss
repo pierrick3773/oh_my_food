@@ -45,6 +45,7 @@ img {
 
   .button-round-purple {
     @include button-purple;
+    box-shadow: 0px 6px 7px 0px #d4d4d4;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 65%;
@@ -78,6 +79,7 @@ img {
         overflow: hidden;
         cursor: pointer;
         width: 100%;
+        box-shadow: 0px 6px 7px 0px #d4d4d4;
 
         .button-plat-title {
           display: flex;
@@ -94,6 +96,7 @@ img {
               text-overflow: ellipsis;
               overflow: hidden;
               max-width: 100%;
+              white-space: nowrap;
             }
 
             p{
@@ -102,6 +105,7 @@ img {
               text-overflow: ellipsis;
               overflow: hidden;
               max-width: 100%;
+              white-space: nowrap;
             }
         }
 

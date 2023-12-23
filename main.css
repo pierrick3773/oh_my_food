@@ -265,6 +265,7 @@ img {
   font-weight: 400;
   line-height: normal;
   grid-area: 1/1/2/2;
+  white-space: nowrap;
 }
 .main-menu .titre-coeur .coeur, .main-menu .titre-coeur .coeur-linear, .main-menu .titre-coeur input {
   grid-area: 1/2/2/3;

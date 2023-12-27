@@ -1,0 +1,54 @@
+@media (min-width: 710px) {
+
+  .fonction {
+  margin-left: 90px;
+  margin-right: 90px;
+
+
+    .titre-fonc{
+      padding-left: 0px;
+    }
+    .button-fonc{
+      display: flex;
+      flex-direction: row;
+      
+
+    }
+  }
+
+  .titre-card{
+    padding-left: 90px;
+    padding-right: 90px;
+
+      .titre-rest {
+        padding-left: 0px;
+      }
+      .card-rest{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+
+        .la-palette{
+          grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .la-note { 
+          grid-area: 1 / 2 / 2 / 3; 
+        }
+        .francaise { 
+          grid-area: 2 / 1 / 3 / 2; 
+        }
+        .le-delice { 
+          grid-area: 2 / 2 / 3 / 3
+        }
+      }
+  }
+
+  footer {
+    
+  }
+
+
+}

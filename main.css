@@ -17,6 +17,7 @@ header {
 header a {
   margin-left: 20px;
   grid-area: 1/1/2/2;
+  color: black;
 }
 header h1 {
   margin-bottom: 0px;
@@ -135,24 +136,24 @@ header h1 img {
   margin-left: -15px;
 }
 
-.titre-rest {
+.titre-card {
   background-color: #EAEAEA;
+}
+.titre-card .titre-rest {
   margin-bottom: 0px;
   padding-left: 15px;
   padding-top: 50px;
 }
-
-.card-rest {
+.titre-card .card-rest {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
   width: 100%;
-  background-color: #EAEAEA;
   align-items: center;
   gap: 15px;
   padding-bottom: 30px;
 }
-.card-rest .card {
+.titre-card .card-rest .card {
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -165,11 +166,11 @@ header h1 img {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.card-rest .card a {
+.titre-card .card-rest .card a {
   color: inherit;
   text-decoration: none;
 }
-.card-rest .card .nouveau {
+.titre-card .card-rest .card .nouveau {
   grid-area: 1/2/2/3;
   background-color: #99e2d0;
   color: #0f9070;
@@ -180,7 +181,7 @@ header h1 img {
   border-radius: 3px;
   font-size: 14px;
 }
-.card-rest .card img {
+.titre-card .card-rest .card img {
   width: 125%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
@@ -188,16 +189,16 @@ header h1 img {
   height: 231px;
   grid-area: 1/1/2/2;
 }
-.card-rest .card .card-txt {
+.titre-card .card-rest .card .card-txt {
   padding-left: 15px;
   margin-top: 0px;
   grid-area: 2/1/3/2;
 }
-.card-rest .card .card-txt .card-title {
+.titre-card .card-rest .card .card-txt .card-title {
   margin-top: 10px;
   margin-bottom: 0px;
 }
-.card-rest .card .card-txt .card-subtitle {
+.titre-card .card-rest .card .card-txt .card-subtitle {
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -215,6 +216,7 @@ footer img {
   width: 35%;
   padding-top: 30px;
   margin-bottom: 10px;
+  max-width: 140px;
 }
 footer .foot-logo {
   display: flex;
@@ -501,5 +503,45 @@ img {
   100% {
     opacity: 0;
     z-index: -1;
+  }
+}
+
+@media (min-width: 710px) {
+  .fonction {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  .fonction .titre-fonc {
+    padding-left: 0px;
+  }
+  .fonction .button-fonc {
+    display: flex;
+    flex-direction: row;
+  }
+  .titre-card {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .titre-card .titre-rest {
+    padding-left: 0px;
+  }
+  .titre-card .card-rest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+  .titre-card .card-rest .la-palette {
+    grid-area: 1/1/2/2;
+  }
+  .titre-card .card-rest .la-note {
+    grid-area: 1/2/2/3;
+  }
+  .titre-card .card-rest .francaise {
+    grid-area: 2/1/3/2;
+  }
+  .titre-card .card-rest .le-delice {
+    grid-area: 2/2/3/3;
   }
 }/*# sourceMappingURL=main.css.map */

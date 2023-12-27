@@ -544,4 +544,46 @@ img {
   .titre-card .card-rest .le-delice {
     grid-area: 2/2/3/3;
   }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  footer img {
+    margin-right: 50px;
+  }
+  footer .foot-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+  footer .foot-txt #restaurant {
+    margin-right: 20px;
+  }
+  footer .foot-txt #partenaire {
+    margin-right: 50px;
+  }
+  footer .foot-txt #mentions {
+    margin-right: 20px;
+  }
+  footer .foot-txt #contatc {
+    margin-right: 50px;
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .main-menu .titre-coeur {
+    width: 30%;
+  }
+  .main-menu .categories-entree, .main-menu .categories-plats, .main-menu .categories-dessert {
+    width: 65%;
+  }
+  .main-menu .button-round-purple {
+    width: 20%;
+  }
 }/*# sourceMappingURL=main.css.map */

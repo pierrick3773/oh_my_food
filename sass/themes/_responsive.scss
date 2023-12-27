@@ -47,8 +47,56 @@
   }
 
   footer {
-    
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+
+    img {
+      margin-right: 50px;
+    }
+    .foot-txt{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-top: 20px;
+
+      #restaurant {
+        margin-right: 20px;
+      }
+
+      #partenaire {
+        margin-right: 50px;
+      }
+
+      #mentions {
+        margin-right: 20px;
+      }
+
+      #contatc {
+        margin-right: 50px;
+      }
+    }
+
+  
   }
 
+  .main-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+      .titre-coeur{
+        width: 30%;
+      }
+      .categories-entree, .categories-plats, .categories-dessert{
+        width: 65%;
+      }
+
+      .button-round-purple {
+        width: 20%;
+      }
+  }
 
 }

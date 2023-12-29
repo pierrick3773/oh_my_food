@@ -1,4 +1,15 @@
 @media (min-width: 710px) {
+  
+  .main_slogan {
+    .localisation{
+    gap: inherit;
+      input {
+        margin: 0px;
+        width: 11%;
+      }
+    }
+     
+  }
 
   .fonction {
   margin-left: 90px;
@@ -11,7 +22,13 @@
     .button-fonc{
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       
+        button {
+          width: 75%;
+          max-width: 324px;
+          margin: 0px;
+        }
 
     }
   }
@@ -27,8 +44,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
+        grid-column-gap: 90px;
+        grid-row-gap: 60px;
+
+        .card{
+          width: 100%;
+        }
 
         .la-palette{
           grid-area: 1 / 1 / 2 / 2;

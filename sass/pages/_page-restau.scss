@@ -19,11 +19,8 @@ img {
   flex-direction: column;
 
     .titre-coeur {
-      display: grid;
-      grid-template-columns: 80% 20%;
-      grid-template-rows: 1fr;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
+      display: flex;
+      gap: 15px;
 
     h2 {
     margin-top: 0px;
@@ -37,11 +34,17 @@ img {
     grid-area: 1 / 1 / 2 / 2; 
     white-space: nowrap;
       }
-
+      .anim-coeur{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      
     .coeur, .coeur-linear, input {
-      grid-area: 1 / 2 / 2 / 3;
+      grid-area: 1 / 1 / 2 / 2;
 
-    }
+    }}
     }
 
   .button-round-purple {

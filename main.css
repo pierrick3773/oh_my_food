@@ -523,11 +523,11 @@ img {
 
 @media (min-width: 710px) {
   .main_slogan .localisation {
-    gap: inherit;
+    gap: 10px;
   }
   .main_slogan .localisation input {
     margin: 0px;
-    width: 11%;
+    width: 109px;
   }
   .fonction {
     margin-left: 90px;

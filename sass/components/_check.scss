@@ -2,28 +2,29 @@
 
   .button-plat {
     &:hover .valid{
+      /*au passage de la souris ou au click le check revient à un margin 0 donc apparait*/
         margin-right: 0px;
-        transition-duration: 0.5s;
+        transition-duration: 0.5s;/*vitesse du déplacment */
       }
       overflow: hidden;
       cursor: pointer;
     .valid {
+      /*placement du fond vert*/
       height: 65px;
       width: 85px;
       background: #99e2d0;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: -85px;
+      margin-right: -85px;/*placement negatif permettant de le sortir du button plat à droite*/
 
       .fa-check{
+        /*placement du check blanc sur le fond vert */
         color: #99e2d0;
         background: white;
         border-radius: 50%;
         padding: 4px;
-      }
-
-      
+      }    
     }
   }
 }

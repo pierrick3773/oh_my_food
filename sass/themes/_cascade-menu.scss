@@ -1,4 +1,4 @@
-
+/*une durée d'animation différentes pour chaques categories de plat pour que chacune arrive en décalé*/
 .categories-entree {
   animation: casquade-entree 1s;
 }
@@ -10,13 +10,15 @@
 .categories-dessert {
   animation: casquade-dessert 2.5s;
 }
-
+/*la même animation pour les 3 categories mais à des timming differents*/
 @keyframes casquade-entree {
   0% {
+    /*au début de l'animation la categories et invisible et décalée de 40px en bas*/
     opacity: 0;
     transform: translateY(40px);
   }
   100% {
+    /*pour finir visible et à sa position initiale*/
     opacity: 1;
     transform: translateY(0px);
   }

@@ -1,4 +1,11 @@
+/*2 parties :
+fond blanc > .fond-loader
+roues en rotation > .loader et .loader::after
+*/
+
+
 .fond-loader {
+  /*mise en place d'un faux fond blanc permettant le fondu  */
   width: 100%;
     height: 100%;
     position: fixed;
@@ -6,29 +13,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fond-loader 1s;
-    animation-delay: 2.4s;
+    animation: fond-loader 1s;/*durée de l'animation de fondu*/
+    animation-delay: 2.4s; /*delais avant le début de l'animation*/
     animation-fill-mode: both; /*anti répétiton */
-    z-index: 3;
+    z-index: 3; /*permet d'être visible au dessus de toute la page index (fond blanc)*/
 
   .loader {
+    /*mise en place de la roue loader*/
     width: 140px;
-    height: 140px;
-    border: 9px solid #9356DC;
+    height: 140px; /*tailles */
+    border: 9px solid #9356DC; /*couleur*/
     border-radius: 50%;
     display: inline-block;
     position: fixed;
     box-sizing: border-box;
-    animation: rotation 4s ease-in-out;
-    z-index: 3;
+    animation: rotation 4s ease-in-out; /*durée de l'animation + fluidité de debut et fin*/
+    z-index: 3;/*permet d'être visible au dessus de toute la page index (loader)*/
   }
   .loader::after {
       content: '';  
+      /*mise en place de la barre intérieur du loader*/
     box-sizing: border-box;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*positionnement par rapport au centre de la roue*/
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -42,13 +51,13 @@
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+      transform: rotate(360deg);/*animation qui permet la rotation de la roue */
     }
   }  
   @keyframes fond-loader{
     100%{
         opacity: 0;
-        z-index: -1;
+        z-index: -1;/*animation qui permet le fondu vers la page index */
     }
 }
 }

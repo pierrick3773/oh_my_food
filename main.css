@@ -322,7 +322,7 @@ img {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 15px;
-  overflow: hidden;
+  overflow: hidden; /*tout ce qui en dehors du button est invisible*/
   cursor: pointer;
   width: 100%;
   box-shadow: 0px 6px 7px 0px #d4d4d4;
@@ -363,6 +363,7 @@ img {
 }
 
 .card .coeur, .titre-coeur .coeur {
+  /*Placement du coeur blanc sur les images restaurants (placer differement directement dans les pages restau)*/
   grid-area: 2/2/3/3;
   font-size: x-large;
   z-index: 2;
@@ -373,6 +374,7 @@ img {
   margin: auto;
 }
 .card input, .titre-coeur input {
+  /*Placement d'une checkbox permettant de cocher le coeur ou non '*/
   grid-area: 2/2/3/3;
   cursor: pointer;
   opacity: 0;
@@ -380,16 +382,18 @@ img {
   height: 25px;
   width: 25px;
   margin: auto;
+  /*annimation de remplissage du coeur*/
 }
 .card input:checked ~ .coeur-linear, .titre-coeur input:checked ~ .coeur-linear {
-  opacity: 1;
-  transition: 400ms;
+  opacity: 1; /*le coeur dégradé apparait*/
+  transition: 400ms; /*durée de l'aimation*/
 }
 .card input:checked ~ .coeur, .titre-coeur input:checked ~ .coeur {
-  opacity: 0;
+  opacity: 0; /*le coeur blanc disparait*/
   transition: 400ms;
 }
 .card .coeur-linear, .titre-coeur .coeur-linear {
+  /*Placement du coeur en dégradé sur les images restaurants*/
   grid-area: 2/2/3/3;
   font-size: x-large;
   -webkit-background-clip: text;
@@ -403,30 +407,36 @@ img {
   margin: auto;
 }
 
+/*le coeur blanc, le coeur dégradé et la checkbox sont supérposés 
+pour permettre une interaction et une apparition*/
 .categories-plats .button-plat, .categories-entree .button-plat, .categories-dessert .button-plat {
   overflow: hidden;
   cursor: pointer;
 }
 .categories-plats .button-plat:hover .valid, .categories-entree .button-plat:hover .valid, .categories-dessert .button-plat:hover .valid {
+  /*au passage de la souris ou au click le check revient à un margin 0 donc apparait*/
   margin-right: 0px;
-  transition-duration: 0.5s;
+  transition-duration: 0.5s; /*vitesse du déplacment */
 }
 .categories-plats .button-plat .valid, .categories-entree .button-plat .valid, .categories-dessert .button-plat .valid {
+  /*placement du fond vert*/
   height: 65px;
   width: 85px;
   background: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -85px;
+  margin-right: -85px; /*placement negatif permettant de le sortir du button plat à droite*/
 }
 .categories-plats .button-plat .valid .fa-check, .categories-entree .button-plat .valid .fa-check, .categories-dessert .button-plat .valid .fa-check {
+  /*placement du check blanc sur le fond vert */
   color: #99e2d0;
   background: white;
   border-radius: 50%;
   padding: 4px;
 }
 
+/*une durée d'animation différentes pour chaques categories de plat pour que chacune arrive en décalé*/
 .categories-entree {
   animation: casquade-entree 1s;
 }
@@ -439,12 +449,15 @@ img {
   animation: casquade-dessert 2.5s;
 }
 
+/*la même animation pour les 3 categories mais à des timming differents*/
 @keyframes casquade-entree {
   0% {
+    /*au début de l'animation la categories et invisible et décalée de 40px en bas*/
     opacity: 0;
     transform: translateY(40px);
   }
   100% {
+    /*pour finir visible et à sa position initiale*/
     opacity: 1;
     transform: translateY(0px);
   }
@@ -469,7 +482,12 @@ img {
     transform: translateY(0px);
   }
 }
+/*2 parties :
+fond blanc > .fond-loader
+roues en rotation > .loader et .loader::after
+*/
 .fond-loader {
+  /*mise en place d'un faux fond blanc permettant le fondu  */
   width: 100%;
   height: 100%;
   position: fixed;
@@ -477,29 +495,31 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fond-loader 1s;
-  animation-delay: 2.4s;
+  animation: fond-loader 1s; /*durée de l'animation de fondu*/
+  animation-delay: 2.4s; /*delais avant le début de l'animation*/
   animation-fill-mode: both; /*anti répétiton */
-  z-index: 3;
+  z-index: 3; /*permet d'être visible au dessus de toute la page index (fond blanc)*/
 }
 .fond-loader .loader {
+  /*mise en place de la roue loader*/
   width: 140px;
-  height: 140px;
-  border: 9px solid #9356DC;
+  height: 140px; /*tailles */
+  border: 9px solid #9356DC; /*couleur*/
   border-radius: 50%;
   display: inline-block;
   position: fixed;
   box-sizing: border-box;
-  animation: rotation 4s ease-in-out;
-  z-index: 3;
+  animation: rotation 4s ease-in-out; /*durée de l'animation + fluidité de debut et fin*/
+  z-index: 3; /*permet d'être visible au dessus de toute la page index (loader)*/
 }
 .fond-loader .loader::after {
   content: "";
+  /*mise en place de la barre intérieur du loader*/
   box-sizing: border-box;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*positionnement par rapport au centre de la roue*/
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -511,13 +531,13 @@ img {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /*animation qui permet la rotation de la roue */
   }
 }
 @keyframes fond-loader {
   100% {
     opacity: 0;
-    z-index: -1;
+    z-index: -1; /*animation qui permet le fondu vers la page index */
   }
 }
 

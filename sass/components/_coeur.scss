@@ -1,5 +1,6 @@
 .card, .titre-coeur{
 .coeur {
+  /*Placement du coeur blanc sur les images restaurants (placer differement directement dans les pages restau)*/
   grid-area: 2 / 2 / 3 / 3;
   font-size: x-large;
   z-index: 2;
@@ -11,6 +12,8 @@
   }
 
   input {
+  /*Placement d'une checkbox permettant de cocher le coeur ou non '*/
+    
     grid-area: 2 / 2 / 3 / 3;
     cursor: pointer;
     opacity: 0;
@@ -18,19 +21,22 @@
     height: 25px;
     width: 25px;
     margin: auto;
+  /*annimation de remplissage du coeur*/
 
       &:checked ~.coeur-linear {
-        opacity: 1;
-        transition: 400ms;
+  
+        opacity: 1; /*le coeur dégradé apparait*/
+        transition: 400ms;/*durée de l'aimation*/
       }
 
       &:checked ~.coeur {
-        opacity: 0;
+        opacity: 0; /*le coeur blanc disparait*/
         transition: 400ms;
       }
   }
 
 .coeur-linear {
+  /*Placement du coeur en dégradé sur les images restaurants*/
   
   grid-area: 2 / 2 / 3 / 3;
   font-size: x-large;
@@ -45,3 +51,5 @@
   margin: auto;
 }
 }
+ /*le coeur blanc, le coeur dégradé et la checkbox sont supérposés 
+ pour permettre une interaction et une apparition*/

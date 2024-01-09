@@ -16,8 +16,8 @@
     background-color:#EAEAEA;
     width: 100%;
     justify-content: center;
-    gap: 8px;
     padding: inherit;
+    gap: 2px;
 
       i {
         display: flex;
@@ -28,6 +28,8 @@
         background:#EAEAEA;
         border:none;
         height: 50px;
+        margin: 0;
+        width: 125px;
       }
   } 
   .slogan-button {

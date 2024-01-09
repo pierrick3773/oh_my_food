@@ -50,8 +50,8 @@ header h1 img {
   background-color: #EAEAEA;
   width: 100%;
   justify-content: center;
-  gap: 8px;
   padding: inherit;
+  gap: 2px;
 }
 .main_slogan .localisation i {
   display: flex;
@@ -62,6 +62,8 @@ header h1 img {
   background: #EAEAEA;
   border: none;
   height: 50px;
+  margin: 0;
+  width: 125px;
 }
 .main_slogan .slogan-button {
   display: flex;

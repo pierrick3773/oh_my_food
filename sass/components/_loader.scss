@@ -20,8 +20,8 @@ roues en rotation > .loader et .loader::after
 
   .loader {
     /*mise en place de la roue loader*/
-    width: 140px;
-    height: 140px; /*tailles */
+    width: 140px;/*largeur*/
+    height: 140px; /*hauteur */
     border: 9px solid #9356DC; /*couleur*/
     border-radius: 50%;
     display: inline-block;
